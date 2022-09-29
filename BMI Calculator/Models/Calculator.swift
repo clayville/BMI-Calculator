@@ -45,7 +45,7 @@ struct Calculator {
             bmi = BMI(value: bmiValue, advice: "You have a normal body weight.\nGreat Job!!!\n Maintain it by eating healthy and\n regular exercise", image: UIImage(named: "normal"))
         default:
             print("obese")
-            bmi = BMI(value: bmiValue, advice: "Regular exercise and cutting down on\n calories might help", image: UIImage(named: "obese"))
+            bmi = BMI(value: bmiValue, advice: "Regular exercise\n and cutting down on\ncalories might help", image: UIImage(named: "obese"))
         }
     }
     

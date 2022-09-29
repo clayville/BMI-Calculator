@@ -146,27 +146,23 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box" translatesAutoresizingMaskIntoConstraints="NO" id="rAH-Gb-XOe">
-                                <rect key="frame" x="55" y="341.66666666666669" width="283" height="240.00000000000006"/>
+                                <rect key="frame" x="24" y="341.66666666666669" width="345.33333333333331" height="240.00000000000006"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="XJA-x1-ETw">
-                                <rect key="frame" x="55" y="161.66666666666666" width="283" height="129.99999999999997"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normal" translatesAutoresizingMaskIntoConstraints="NO" id="XJA-x1-ETw">
+                                <rect key="frame" x="24" y="161.66666666666666" width="345.33333333333331" height="129.99999999999997"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="7Lb-sH-rJ5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McY-YA-Yc4">
-                                <rect key="frame" x="63.666666666666657" y="358.66666666666669" width="266" height="86"/>
-                                <string key="text">You have a normal body weight.
-Great Job!!!
-Maintain it by eating healthy and
-regular exercise :)</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEy-YV-RAe">
                                 <rect key="frame" x="20" y="89" width="353" height="32.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Eating food with more calories might help." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McY-YA-Yc4">
+                                <rect key="frame" x="55" y="379" width="263" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -174,18 +170,20 @@ regular exercise :)</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.086274509803921567" green="0.094117647058823528" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="McY-YA-Yc4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="1pE-0c-bRN"/>
+                            <constraint firstItem="McY-YA-Yc4" firstAttribute="leading" secondItem="rAH-Gb-XOe" secondAttribute="leading" id="2Jg-6V-DaH"/>
                             <constraint firstItem="sEy-YV-RAe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="47r-Cx-Vay"/>
+                            <constraint firstItem="McY-YA-Yc4" firstAttribute="centerX" secondItem="rAH-Gb-XOe" secondAttribute="centerX" id="8BO-CV-0wR"/>
                             <constraint firstItem="XJA-x1-ETw" firstAttribute="leading" secondItem="rAH-Gb-XOe" secondAttribute="leading" id="OEQ-yZ-0tw"/>
                             <constraint firstAttribute="bottom" secondItem="kkk-Sz-FyD" secondAttribute="bottom" constant="30" id="OjO-m6-YsM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkk-Sz-FyD" secondAttribute="trailing" constant="20" id="Usy-2f-VBI"/>
-                            <constraint firstItem="McY-YA-Yc4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zt7-dq-E1q"/>
+                            <constraint firstItem="rAH-Gb-XOe" firstAttribute="top" secondItem="McY-YA-Yc4" secondAttribute="bottom" constant="-81.333333333333314" id="aNI-Vr-DRE"/>
                             <constraint firstItem="rAH-Gb-XOe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mao-q4-5s3"/>
                             <constraint firstItem="rAH-Gb-XOe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="70" id="nbb-2w-diq"/>
                             <constraint firstItem="XJA-x1-ETw" firstAttribute="trailing" secondItem="rAH-Gb-XOe" secondAttribute="trailing" id="pFJ-bF-wk7"/>
                             <constraint firstItem="rAH-Gb-XOe" firstAttribute="top" secondItem="XJA-x1-ETw" secondAttribute="bottom" constant="50" id="vD0-HC-QXH"/>
                             <constraint firstItem="sEy-YV-RAe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="wJi-Qp-xPT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sEy-YV-RAe" secondAttribute="trailing" constant="20" id="y8h-HR-gBd"/>
+                            <constraint firstItem="McY-YA-Yc4" firstAttribute="leading" secondItem="rAH-Gb-XOe" secondAttribute="leading" id="zA5-Tt-BOF"/>
                             <constraint firstItem="kkk-Sz-FyD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zsS-Fs-STP"/>
                         </constraints>
                     </view>
@@ -197,7 +195,7 @@ regular exercise :)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="-200"/>
+            <point key="canvasLocation" x="-472.51908396946561" y="-200"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4an-0v-GSX">
@@ -245,12 +243,12 @@ your height or not.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="apple" width="130" height="130"/>
         <image name="background" width="375" height="667"/>
         <image name="box" width="283" height="240"/>
         <image name="calculatebtn" width="325" height="90"/>
         <image name="home_background" width="375" height="667"/>
         <image name="logo" width="89" height="89"/>
+        <image name="normal" width="130" height="130"/>
         <image name="recalculate_btn" width="343" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
